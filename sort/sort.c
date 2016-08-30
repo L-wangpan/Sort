@@ -45,8 +45,26 @@ void quikSort(int *a,int low,int high){
 	
 	}
 }
+int chooseMax(int *a,int n){
+
+}
+void chooseSort(int *a,int n){
+	int i=0,j=0;
+	int max=0;
+	for(i=0;i<n;i++){
+	for(j=i+1;j<n;j++)
+	{
+		if(a[j]>a[max]){
+			max=j;
+		}
+	}
+	swap(&a[max],&a[i]);
+	print(a,10);
+	}
+}
 int main(){
 	int a[10]={20,45,2,34,55,23,67,2,13,9};	
-	quikSort(a,0,9);
+	//quikSort(a,0,9);
+	chooseSort(a,10);
 	return 0;
 }
