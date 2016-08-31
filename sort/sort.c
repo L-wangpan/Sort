@@ -1,23 +1,8 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include"heap.h"
 void print(int *a,int n);
 void swap(int *x,int *y);
 int partition(int* a,int left,int right);
-void print(int *a,int n){
-	int i=0;
-	for(i=0;i<n;i++){
-		printf("%d ",a[i]);
-	}
-	printf("\n");
-	
-}
 
-void swap(int *x,int *y){
-	int t=0;
-	t=*x;
-	*x=*y;
-	*y=t;
-}
 int partition(int* a,int left,int right){
 	int key = a[left];
 	
@@ -90,10 +75,13 @@ void chooseSort(int *a,int n){
 		print(a,10);
 	}
 }
+
+
 int main(){
 	int a[10]={5,45,9,34,55,23,67,20,13,9};	
 	//quikSort(a,0,9);
 	//chooseSort(a,10);
-	chooseSortOptimization(a,10);
+//	chooseSortOptimization(a,10);
+	HeapSort(a,10);
 	return 0;
 }
