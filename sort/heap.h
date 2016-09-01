@@ -1,22 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include"swap.h"
+#include"print.h"
 void heapAdust(int *heap,int s,int l);
-void HeapBuild(int* heap,int l);
 void HeapSort(int *heap,int l);
-void swap(int *x,int *y){
-	int t=0;
-	t=*x;
-	*x=*y;
-	*y=t;
-}
-void print(int *a,int n){
-	int i=0;
-	for(i=0;i<n;i++){
-		printf("%d ",a[i]);
-	}
-	printf("\n");
-	
-}
+void HeapBuild(int* heap,int l);
 void heapAdust(int *heap,int s,int l){
 	int temp=heap[s];
 	int lchild = 2*s+1;
