@@ -82,27 +82,11 @@ LINK32=link.exe
 # Name "sort - Win32 Debug"
 # Begin Source File
 
-SOURCE=.\choiceSort.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\print.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\quickSort.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\shell.h
+SOURCE=.\mergeSort.h
 # End Source File
 # Begin Source File
 
 SOURCE=.\sort.c
-# End Source File
-# Begin Source File
-
-SOURCE=.\swap.h
 # End Source File
 # End Target
 # End Project

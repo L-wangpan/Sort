@@ -3,14 +3,14 @@ void InsertSort(int *a,int gap,int n){
 	int x;
 	for(i=gap;i<n;i++){
 		  if(a[i] < a[i-gap]){          
-             int j = i-gap;     
-             int x = a[i];            
+              j = i-gap;     
+              x = a[i];            
              a[i] = a[i-gap];           
              while(x < a[j]){      
                  a[j+gap] = a[j];  
                  j -= gap;              
              }  
-             a[j+gap] = x;            / 
+             a[j+gap] = x;            
         } 
 
 	}
