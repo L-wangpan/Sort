@@ -2,7 +2,7 @@
 #include<stdlib.h>
 void sortArray_find_n(int* a,int l,int n){
 	int i=0,j=l-1;
-	int b[20],index=0;
+	int b[50],index=0;
 	int count=0;
 	for(i=0,j=l-1;i<j;){
 		if(a[i]+a[j]==n){
