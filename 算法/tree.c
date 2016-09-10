@@ -1,10 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-typedef struct BitTree{
-	int value;
-	BitTree *left;
-	BitTree *right;
-}
 void PreOrder(BitTree root){
 	SeqStack *s;
 	BitTree p;
@@ -34,7 +29,25 @@ void InOrder(BiTree root){
 			p=p->left;
 		}
 		if(!IsEmpty(S)){
-			4  
+			 Pop(S,&p);
+			 Visit();
+			 p=p->right;
+		}
+	}
+}
+void LevelOrder(BiTree root){
+	SeqQueue *Q;
+	BiTree p;
+	InitQueue(Q);
+	EnterQueue(Q,root);
+	while(!=IsEmpty(Q)){
+		DeletQueue(Q,&p);
+		visit(p->data);
+		if(p->left!=null){
+			EnterQueue(Q,p->left);
+		}
+		if(p->right!=null){
+			EnterQueue(Q,p->right);
 		}
 	}
 }
